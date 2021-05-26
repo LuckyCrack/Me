@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Interactive Resume of Vaibhav</title>
-    <link rel="icon" href="TemplateData/favicon.ico" >
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="TemplateData/UnityProgress.javascript"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Build.json", {onProgress: UnityProgress});
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Build.json", {onProgress: UnityProgress});
     </script>
-  </head>
-  <body style="background: #000000;" onclick="unityInstance.SetFullscreen(1)"">
-    <div class="webgl-content" style="width: 100%; height: 100%;">
-      <div id="unityContainer"></div>
-    </div>
-  </body>
+</head>
+<body>
+<div class="webgl-content">
+    <div id="gameContainer" style="width: 1280px; height: 720px"></div>
+</div>
+<div class="simmer">template by: <a href="https://simmer.io" target="_blank">SIMMER.io</a></div>
+<script src="TemplateData/responsive.javascript"></script>
+</body>
 </html>
