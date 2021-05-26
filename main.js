@@ -3,6 +3,8 @@
 {
   unityInstance.SetFullscreen(1)
 }*/
+for(i=1;i>0;i++)
+{
 var set_fs = false;
 if(set_fs == false)
 {
@@ -11,4 +13,5 @@ if(set_fs == false)
     unityInstance.SetFullscreen(1);
     set_fs = true;
   }
+}
 }
