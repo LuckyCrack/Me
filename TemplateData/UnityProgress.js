@@ -22,15 +22,15 @@ function UnityProgress(unityInstance, progress) {
   if (progress == 1)
   {
     unityInstance.logo.style.display = unityInstance.progress.style.display = "none";
-    /*var ele = document.getElementById("info");
-    ele.style.display = unityInstance.progress.style.display = "block";*/
+    var ele = document.getElementById("info");
+    ele.style.display = unityInstance.progress.style.display = "block";
   }
 
 }
 
 function click_btn()
 {
-  /*var ele = document.getElementById("info");
-  ele.style.display = unityInstance.progress.style.display = "none";*/
+  var ele = document.getElementById("info");
+  ele.style.display = unityInstance.progress.style.display = "none";
   unityInstance.SetFullscreen(1);
 }
