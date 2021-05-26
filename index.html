@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
-     <script src="main.js"></script>
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Build.json", {onProgress: UnityProgress});
     </script>
   </head>
-  <body style="background: #000000;" onclick="unityInstance.SetFullscreen(1)" onkeydown="check_keys()">
+  <body style="background: #000000;" onclick="unityInstance.SetFullscreen(1)"">
     <div class="webgl-content" style="width: 100%; height: 100%;">
       <div id="unityContainer"></div>
     </div>
