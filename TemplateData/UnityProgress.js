@@ -23,7 +23,7 @@ function UnityProgress(unityInstance, progress) {
   {
     unityInstance.logo.style.display = unityInstance.progress.style.display = "none";
     var ele = document.getElementById("info");
-    ele.style.display = unityInstance.progress.style.display = "block";
+    ele.style.display = "block";
   }
 
 }
@@ -31,6 +31,6 @@ function UnityProgress(unityInstance, progress) {
 function click_btn()
 {
   var ele = document.getElementById("info");
-  ele.style.display = unityInstance.progress.style.display = "none";
+  ele.style.display = "none";
   unityInstance.SetFullscreen(1);
 }
