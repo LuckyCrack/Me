@@ -3,15 +3,19 @@
 {
   unityInstance.SetFullscreen(1)
 }*/
-for(i=1;i>0;i++)
-{
-var set_fs = false;
-if(set_fs == false)
-{
-  while((window.fullScreen) || (window.innerWidth == screen.width && window.innerHeight == screen.height) == false)
-  {
-    unityInstance.SetFullscreen(1);
-    set_fs = true;
-  }
-}
-}
+window.onload = maxWindow;
+
+   function maxWindow() {
+       window.moveTo(0, 0);
+
+       if (document.all) {
+           top.window.resizeTo(screen.availWidth, screen.availHeight);
+       }
+
+       else if (document.layers || document.getElementById) {
+           if (top.window.outerHeight < screen.availHeight || top.window.outerWidth < screen.availWidth) {
+               top.window.outerHeight = screen.availHeight;
+               top.window.outerWidth = screen.availWidth;
+           }
+       }
+   }
