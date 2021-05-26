@@ -3,6 +3,12 @@
 {
   unityInstance.SetFullscreen(1)
 }*/
-window.onload = function() {
-  unityInstance.SetFullscreen(1)
-};
+var set_fs = false;
+if(set_fs == false)
+{
+  while((window.fullScreen) || (window.innerWidth == screen.width && window.innerHeight == screen.height) == false)
+  {
+    unityInstance.SetFullscreen(1);
+    set_fs = true;
+  }
+}
