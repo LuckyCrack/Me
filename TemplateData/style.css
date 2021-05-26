@@ -21,3 +21,8 @@ body
 {
   margin: auto;
 }
+canvas
+{
+  border: 4px black;
+  border-radius: 10px
+}
