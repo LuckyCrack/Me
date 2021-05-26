@@ -1,4 +1,4 @@
-function checkKey(e) {
+function check_keys(e) {
 
     e = e || window.event;
 
