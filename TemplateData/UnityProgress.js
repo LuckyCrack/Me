@@ -6,7 +6,7 @@ function UnityProgress(unityInstance, progress) {
     unityInstance.logo.className = "logo " + unityInstance.Module.splashScreenStyle;
     unityInstance.container.appendChild(unityInstance.logo);
   }
-  if (!unityInstance.progress) {    
+  if (!unityInstance.progress) {
     unityInstance.progress = document.createElement("div");
     unityInstance.progress.className = "progress " + unityInstance.Module.splashScreenStyle;
     unityInstance.progress.empty = document.createElement("div");
@@ -22,6 +22,15 @@ function UnityProgress(unityInstance, progress) {
   if (progress == 1)
   {
     unityInstance.logo.style.display = unityInstance.progress.style.display = "none";
+    var ele = document.getElementById("info");
+    ele.style.display = unityInstance.progress.style.display = "block";
   }
-    
+
+}
+
+function click_btn()
+{
+  var ele = document.getElementById("info");
+  ele.style.display = unityInstance.progress.style.display = "none";
+  unityInstance.SetFullscreen(1);
 }
