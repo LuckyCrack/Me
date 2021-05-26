@@ -22,7 +22,6 @@ function UnityProgress(unityInstance, progress) {
   if (progress == 1)
   {
     unityInstance.logo.style.display = unityInstance.progress.style.display = "none";
-    unityInstance.SetFullscreen(1);
   }
     
 }
