@@ -36,7 +36,7 @@ function click_btn()
 }
 function keyisdown(e)
 {
-  if(e..keyCode === 13)
+  if(e.keyCode === 13)
   {
     var ele = document.getElementById("info");
     ele.style.display = "none";
