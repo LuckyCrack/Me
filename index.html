@@ -10,6 +10,19 @@
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
+      if(UnityLoader.SystemInfo.mobile == true)
+      {
+        var ele = document.getElementById("info");
+        ele.style.width = "90%";
+        ele.style.height = "90%";
+      }
+      else
+      {
+        var ele = document.getElementById("info");
+        ele.style.width = "50%";
+        ele.style.height = "50%";
+      }
+    </script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Build.json", {onProgress: UnityProgress});
     </script>
   </head>
