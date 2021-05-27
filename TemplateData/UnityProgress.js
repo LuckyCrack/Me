@@ -22,3 +22,12 @@ function UnityProgress(unityInstance, progress) {
   if (progress == 1)
     unityInstance.logo.style.display = unityInstance.progress.style.display = "none";
 }
+
+function click_btn()
+{
+  alert("Click");
+}
+function keyisdown()
+{
+  alert("Enter");
+}
