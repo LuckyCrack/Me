@@ -23,7 +23,38 @@ function UnityProgress(unityInstance, progress) {
   {
     unityInstance.logo.style.display = unityInstance.progress.style.display = "none";
     var ele = document.getElementById("info");
-    ele.style.display = "block";
+    var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+}
+
+      if(isMobile.any())
+      {
+        ele.style.width = "90%";
+        ele.style.height = "90%";
+      }
+      else
+      {
+        ele.style.width = "50%";
+        ele.style.height = "50%";
+      }
+      ele.style.display = "block";
   }
 
 }
