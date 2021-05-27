@@ -2052,10 +2052,10 @@ var UnityLoader = UnityLoader || {
     }
   }(),
   compatibilityCheck: function(e, t, r) {
-    UnityLoader.SystemInfo.hasWebGL ? UnityLoader.SystemInfo.mobile ? e.popup("Please Rotate Your Device to Landscape Mode.", [{
+    UnityLoader.SystemInfo.hasWebGL ? UnityLoader.SystemInfo.hasWebGL ? e.popup("Please Rotate Your Device to Landscape Mode.", [{
       text: "OK",
       callback: t
-    }]) : ["Edge", "Firefox", "Chrome", "Safari"].indexOf(UnityLoader.SystemInfo.browser) == -1 ? e.popup("Please Rotate Your Device to Landscape Mode.", [{
+    }]) : UnityLoader.SystemInfo.hasWebGL ? e.popup("Please Rotate Your Device to Landscape Mode.", [{
       text: "OK",
       callback: t
     }]) : t() : e.popup("Your browser does not support WebGL", [{
