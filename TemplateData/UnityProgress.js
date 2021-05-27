@@ -37,7 +37,7 @@ function click_btn()
 
 function keyisdown()
 {
- if (event.keyCode == 13){
+
   alert("Enter is pressed");
- }
+
 }
