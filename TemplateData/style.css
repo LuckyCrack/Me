@@ -1,11 +1,3 @@
-.webgl-content
-{
-  cursor: url('cur.png'),auto;
-}
-canvas
-{
-  cursor: url('cur.png'),auto;
-}
 .webgl-content * {border: 0; margin: 0; padding: 0;}
 .webgl-content {position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 .unityContainer {border-radius: 20px; top: 50%;}
