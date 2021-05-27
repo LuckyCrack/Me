@@ -1,4 +1,4 @@
-.webgl-content
+.webgl-content, *,.webgl-content *
 {
   cursor: url('cur.png'),auto;
   -webkit-transform: translate(-50%, -50%);
