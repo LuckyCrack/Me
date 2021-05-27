@@ -23,6 +23,16 @@ function UnityProgress(unityInstance, progress) {
   {
     unityInstance.logo.style.display = unityInstance.progress.style.display = "none";
     var ele = document.getElementById("info");
+       if(UnityLoader.SystemInfo.mobile == true)
+       {
+         ele.style.width = "90%";
+         ele.style.height = "90%";
+       }
+       else
+       {
+         ele.style.width = "50%";
+         ele.style.height = "50%";
+       }
     ele.style.display = "block";
   }
 
