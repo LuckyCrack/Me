@@ -34,3 +34,12 @@ function click_btn()
   ele.style.display = "none";
   unityInstance.SetFullscreen(1);
 }
+function keyisdown(e)
+{
+  if(e..keyCode === 13)
+  {
+    var ele = document.getElementById("info");
+    ele.style.display = "none";
+    unityInstance.SetFullscreen(1);
+  }
+}
