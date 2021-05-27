@@ -3,3 +3,17 @@
 
 ### Preview
 ![Image](https://github.com/LuckyCrack/Me/blob/main/PreviewFiles/preview.gif)
+
+### Technologies Used
+* HTML5
+* CSS3
+* JavaScript
+* C#
+
+## Hardware Used in development.
+* Brain
+
+## Softwares Used
+* Unity Game Engine
+* Asprite
+* Photoshop/Illustrator
